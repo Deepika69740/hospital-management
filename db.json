@@ -1,0 +1,282 @@
+{
+  "hospitals": [
+    {
+      "id": "1",
+      "name": "City General Hospital",
+      "location": "New York",
+      "departments": [
+        "Cardiology",
+        "Neurology",
+        "Pediatrics"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Metro Health Center",
+      "location": "Chicago",
+      "departments": [
+        "Orthopedics",
+        "Dermatology",
+        "Ophthalmology"
+      ]
+    },
+    {
+      "id": "fdb7",
+      "name": "zsdxfcgvhb",
+      "location": "dxcfvgbk",
+      "departments": []
+    },
+    {
+      "id": "2992",
+      "name": "yashodha",
+      "location": "hydrabad",
+      "departments": []
+    },
+    {
+      "id": "7ad8",
+      "name": "kims",
+      "location": "hydrabad",
+      "departments": []
+    },
+    {
+      "id": "39dd",
+      "name": "ks hospital",
+      "location": "hydrabad",
+      "departments": []
+    }
+  ],
+  "doctors": [
+    {
+      "id": "1",
+      "name": "Dr. Sarah Johnson",
+      "qualifications": "MD, Cardiology",
+      "specializations": [
+        "Cardiology"
+      ],
+      "experience": 10,
+      "hospitalIds": [
+        "1",
+        "2"
+      ],
+      "availability": [
+        {
+          "id": "slot1",
+          "hospitalId": "1",
+          "date": "2023-06-20",
+          "startTime": "09:00",
+          "endTime": "10:00",
+          "fee": 150,
+          "booked": false
+        },
+        {
+          "id": "slot2",
+          "hospitalId": "1",
+          "date": "2023-06-20",
+          "startTime": "14:00",
+          "endTime": "15:00",
+          "fee": 150,
+          "booked": false
+        },
+        {
+          "id": "slot3",
+          "hospitalId": "2",
+          "date": "2023-06-21",
+          "startTime": "10:00",
+          "endTime": "11:00",
+          "fee": 175,
+          "booked": false
+        }
+      ]
+    },
+    {
+      "id": "0617",
+      "name": "Dr. Sai Deepika",
+      "qualifications": "MBBS",
+      "specializations": [
+        "Dental"
+      ],
+      "experience": 1,
+      "hospitalIds": [
+        "fdb7",
+        "2992"
+      ],
+      "availability": [
+        {
+          "id": "slot4",
+          "hospitalId": "fdb7",
+          "date": "2023-06-22",
+          "startTime": "11:00",
+          "endTime": "12:00",
+          "fee": 100,
+          "booked": false
+        }
+      ]
+    },
+    {
+      "id": "8bd1",
+      "name": "Dr. Y.V.S.D.R",
+      "qualifications": "MBBS",
+      "specializations": [
+        "Multi-Specialty"
+      ],
+      "experience": 1,
+      "hospitalIds": [
+        "7ad8"
+      ],
+      "availability": [
+        {
+          "id": "slot5",
+          "hospitalId": "7ad8",
+          "date": "2023-06-23",
+          "startTime": "13:00",
+          "endTime": "14:00",
+          "fee": 120,
+          "booked": false
+        }
+      ]
+    }
+  ],
+  "patients": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "gender": "Male",
+      "dob": "1985-05-15",
+      "idNumber": "A12345678"
+    },
+    {
+      "id": "5bca",
+      "name": "Venkata Sai Deepika",
+      "gender": "Female",
+      "dob": "2003-07-14",
+      "idNumber": "12345678"
+    },
+    {
+      "id": "a134",
+      "name": "Deepika",
+      "gender": "Female",
+      "dob": "2002-10-08",
+      "idNumber": "12345678"
+    },
+    {
+      "id": "93ca",
+      "name": "Sai",
+      "gender": "Female",
+      "dob": "2005-10-20",
+      "idNumber": "90109010"
+    },
+    {
+      "id": "0cb9",
+      "name": "venkat",
+      "gender": "Male",
+      "dob": "2000-10-10",
+      "idNumber": "12345678"
+    },
+    {
+      "id": "6926",
+      "name": "yannam venkata sai deepika",
+      "gender": "Female",
+      "dob": "2000-12-20",
+      "idNumber": "123456"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "1",
+      "doctorId": "1",
+      "patientId": "1",
+      "hospitalId": "1",
+      "slotId": "slot1",
+      "date": "2023-06-20",
+      "startTime": "09:00",
+      "endTime": "10:00",
+      "fee": 150,
+      "status": "confirmed",
+      "createdAt": "2023-06-15T09:30:00Z"
+    },
+    {
+      "id": "b172",
+      "doctorId": "0617",
+      "patientId": "1",
+      "hospitalId": "fdb7",
+      "slotId": "slot4",
+      "date": "2023-06-22",
+      "startTime": "11:00",
+      "endTime": "12:00",
+      "fee": 100,
+      "status": "confirmed"
+    },
+    {
+      "id": "fd92",
+      "doctorId": "8bd1",
+      "patientId": "1",
+      "hospitalId": "7ad8",
+      "slotId": "slot5",
+      "date": "2023-06-23",
+      "startTime": "13:00",
+      "endTime": "14:00",
+      "fee": 120,
+      "status": "confirmed"
+    },
+    {
+      "id": "c1bc",
+      "doctorId": "1",
+      "patientId": "1",
+      "hospitalId": "1",
+      "slotId": "slot2",
+      "date": "2023-06-20",
+      "startTime": "14:00",
+      "endTime": "15:00",
+      "fee": 150,
+      "status": "confirmed"
+    },
+    {
+      "id": "dff2",
+      "doctorId": "8bd1",
+      "patientId": "1",
+      "hospitalId": "7ad8",
+      "slotId": "slot5",
+      "date": "2023-06-23",
+      "startTime": "13:00",
+      "endTime": "14:00",
+      "fee": 120,
+      "status": "confirmed"
+    },
+    {
+      "id": "700b",
+      "doctorId": "8bd1",
+      "patientId": "1",
+      "hospitalId": "7ad8",
+      "slotId": "slot5",
+      "date": "2023-06-23",
+      "startTime": "13:00",
+      "endTime": "14:00",
+      "fee": 120,
+      "status": "confirmed"
+    },
+    {
+      "id": "e433",
+      "doctorId": "8bd1",
+      "patientId": "1",
+      "hospitalId": "7ad8",
+      "slotId": "slot5",
+      "date": "2023-06-23",
+      "startTime": "13:00",
+      "endTime": "14:00",
+      "fee": 120,
+      "status": "confirmed"
+    },
+    {
+      "id": "5457",
+      "doctorId": "0617",
+      "patientId": "a134",
+      "hospitalId": "fdb7",
+      "slotId": "slot4",
+      "date": "2023-06-22",
+      "startTime": "11:00",
+      "endTime": "12:00",
+      "fee": 100,
+      "status": "confirmed"
+    }
+  ]
+}
